@@ -10,7 +10,8 @@
       "Bash(git remote *)",
       "Bash(git push *)",
       "Bash(git *)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(zip *)"
     ]
   },
   "$version": 3
