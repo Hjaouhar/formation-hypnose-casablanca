@@ -193,12 +193,12 @@ img {
 
 .hero-bg {
     position: absolute;
-    top: 0;
+    top: -10%;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -10%;
     z-index: -2;
-    background: url('hero-bg-new.jpg') center center / cover no-repeat;
+    background: url('hero-bg-new.jpg') center top / cover no-repeat;
     opacity: 0.5;
 }
 
