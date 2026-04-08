@@ -1480,6 +1480,61 @@ section {
 }
 
 /* ===================================
+   INTERNATIONAL TESTIMONIALS SECTION
+   =================================== */
+.international-testimonials {
+    background: white;
+}
+
+.intl-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.intl-card {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: var(--radius-xl);
+    transition: var(--transition);
+    text-align: center;
+    border-top: 4px solid var(--primary-color);
+}
+
+.intl-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    background: white;
+}
+
+.intl-flag {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.intl-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.intl-quote {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+}
+
+.intl-author {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* ===================================
    CONTACT SECTION
    =================================== */
 .contact {
@@ -2025,5 +2080,9 @@ section {
 
     .video-grid {
         grid-template-columns: 1fr;
+    }
+
+    .intl-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
