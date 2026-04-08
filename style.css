@@ -198,7 +198,8 @@ img {
     right: 0;
     bottom: 0;
     z-index: -2;
-    background: url('hero-bg-new.jpg') center top / cover no-repeat;
+    background: url('hero-bg-new.jpg') center center / cover no-repeat;
+    opacity: 0.5;
 }
 
 .hero-pattern {
@@ -208,7 +209,7 @@ img {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: rgba(15, 23, 42, 0.55);
+    background: rgba(15, 23, 42, 0.3);
 }
 
 .hero-content {
