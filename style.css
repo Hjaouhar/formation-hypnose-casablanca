@@ -1077,6 +1077,120 @@ section {
 }
 
 /* ===================================
+   POURQUOI CASABLANCA SECTION
+   =================================== */
+.pourquoi-casablanca {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.avantages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.avantage-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    border-left: 4px solid var(--primary-color);
+}
+
+.avantage-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.avantage-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.5rem;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avantage-icon i {
+    font-size: 1.75rem;
+    color: white;
+}
+
+.avantage-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.avantage-card p {
+    color: var(--text-light);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* ===================================
+   APPLICATIONS SECTION
+   =================================== */
+.applications {
+    background: white;
+}
+
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.application-item {
+    background: var(--bg-light);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius-xl);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.application-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    background: white;
+}
+
+.application-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.05));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.application-icon i {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+.application-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.application-item p {
+    color: var(--text-light);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* ===================================
    CONTACT SECTION
    =================================== */
 .contact {
@@ -1550,6 +1664,14 @@ section {
     .formateur-credentials {
         grid-template-columns: 1fr;
     }
+
+    .avantages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .applications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
@@ -1585,5 +1707,9 @@ section {
     .contact-info {
         grid-template-columns: 1fr;
         flex-direction: column;
+    }
+
+    .applications-grid {
+        grid-template-columns: 1fr;
     }
 }
