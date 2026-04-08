@@ -1233,7 +1233,46 @@ section {
    VILLES MAROC SECTION
    =================================== */
 .villes-maroc {
+    position: relative;
     background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
+    overflow: hidden;
+}
+
+.villes-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.06;
+    background-image: 
+        /* Moroccan arch pattern */
+        radial-gradient(ellipse 60px 80px at 10% 20%, #c2410c 0%, transparent 70%),
+        radial-gradient(ellipse 60px 80px at 30% 15%, #c2410c 0%, transparent 70%),
+        radial-gradient(ellipse 60px 80px at 50% 25%, #c2410c 0%, transparent 70%),
+        radial-gradient(ellipse 60px 80px at 70% 18%, #c2410c 0%, transparent 70%),
+        radial-gradient(ellipse 60px 80px at 90% 22%, #c2410c 0%, transparent 70%),
+        /* Minaret silhouettes */
+        linear-gradient(to top, #065f46 0%, transparent 60%),
+        /* Moroccan star pattern */
+        radial-gradient(circle 3px at 15% 50%, #d97706 0%, transparent 100%),
+        radial-gradient(circle 3px at 25% 60%, #d97706 0%, transparent 100%),
+        radial-gradient(circle 3px at 45% 45%, #d97706 0%, transparent 100%),
+        radial-gradient(circle 3px at 65% 55%, #d97706 0%, transparent 100%),
+        radial-gradient(circle 3px at 85% 48%, #d97706 0%, transparent 100%),
+        /* City dots */
+        radial-gradient(circle 8px at 20% 70%, #dc2626 0%, transparent 100%),
+        radial-gradient(circle 8px at 35% 80%, #dc2626 0%, transparent 100%),
+        radial-gradient(circle 8px at 55% 65%, #dc2626 0%, transparent 100%),
+        radial-gradient(circle 8px at 75% 75%, #dc2626 0%, transparent 100%),
+        radial-gradient(circle 8px at 90% 85%, #dc2626 0%, transparent 100%);
+    background-size: 100% 100%;
+}
+
+.villes-maroc .container {
+    position: relative;
+    z-index: 1;
 }
 
 .villes-grid {
@@ -1477,61 +1516,6 @@ section {
     font-size: 0.9rem;
     line-height: 1.8;
     font-family: 'Inter', sans-serif;
-}
-
-/* ===================================
-   INTERNATIONAL TESTIMONIALS SECTION
-   =================================== */
-.international-testimonials {
-    background: white;
-}
-
-.intl-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.intl-card {
-    background: var(--bg-light);
-    padding: 2rem;
-    border-radius: var(--radius-xl);
-    transition: var(--transition);
-    text-align: center;
-    border-top: 4px solid var(--primary-color);
-}
-
-.intl-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
-    background: white;
-}
-
-.intl-flag {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.intl-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: var(--secondary-color);
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-}
-
-.intl-quote {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    line-height: 1.7;
-    margin-bottom: 1.25rem;
-    font-style: italic;
-}
-
-.intl-author {
-    font-size: 0.85rem;
-    color: var(--primary-color);
-    font-weight: 600;
 }
 
 /* ===================================
@@ -2082,7 +2066,7 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .intl-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .villes-bg-overlay {
+        opacity: 0.04;
     }
 }
