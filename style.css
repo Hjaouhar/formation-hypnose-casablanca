@@ -198,7 +198,7 @@ img {
     right: 0;
     bottom: 0;
     z-index: -2;
-    background: url('hero-bg.jpeg') center/cover no-repeat;
+    background: url('hero-bg-new.jpg') center/cover no-repeat;
 }
 
 .hero-pattern {
