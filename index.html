@@ -766,17 +766,39 @@
                             Appeler maintenant
                         </a>
                     </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h3>Envoyez-nous un message</h3>
+                    <p>Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.</p>
+                    <form class="contact-form" action="https://formsubmit.co/h.jaouhar@gmail.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="Nouvelle demande de contact - Formation Hypnose Ericksonienne">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_next" value="https://hjaouhar.github.io/formation-hypnose-casablanca">
+                        
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
                         </div>
-                        <h3>Email</h3>
-                        <p>Envoyez-nous un email pour toute demande d'information complémentaire.</p>
-                        <a href="mailto:contact@formationpnlcasablanca.com" class="contact-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            Envoyer un email
-                        </a>
-                    </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+212 6XX XXX XXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
                 </div>
                 <div class="contact-cta">
                     <div class="cta-content">
@@ -855,10 +877,6 @@
                         <li>
                             <i class="fas fa-phone"></i>
                             <a href="tel:+212600601878">+212 6 00 60 18 78</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:contact@formationpnlcasablanca.com">contact@formationpnlcasablanca.com</a>
                         </li>
                     </ul>
                     <div class="footer-social">
